@@ -1,0 +1,45 @@
+button {
+	padding: 0;
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+
+.btn-color(@bg-color, @disabled:false) {
+	background: @bg-color;
+	color: contrast(@bg-color, #000, #fff, 43%);
+
+	&:hover when not (@disabled) {
+		background: darken(@bg-color, 3%);
+	}
+
+	&:active when not (@disabled) {
+		background: darken(@bg-color, 6%);
+	}
+}
+
+a.btn {
+	display: inline-flex;
+}
+
+.btn {
+	padding: @rem * 23 @rem * 45;
+	font-size: @rem * 13;
+	font-weight: 600;
+	border-radius: 6 * @rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.15s;
+
+	&:disabled {
+		.btn-color(red, true);
+		cursor: auto;
+	}
+
+	&--blue-dark {
+		.btn-color(@blue-dark);
+	}
+	&--red {
+		.btn-color(@red);
+	}
+}

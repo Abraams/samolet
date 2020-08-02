@@ -1,0 +1,31 @@
+.slick-dots {
+	display: flex;
+	li {
+		width: 10 * @rem;
+		height: 10 * @rem;
+		background-color: transparent;
+		border: 1px solid #fff;
+		border-radius: 10em;
+		transition: 0.15s;
+		margin-right: 8 * @rem;
+		cursor: pointer;
+		@media screen and (max-width: 449px) {
+			margin-right: 12 * @rem;
+			width: 13 * @rem;
+			height: 13 * @rem;
+		}
+
+		&.slick-active {
+			background-color: #fff;
+			width: 30 * @rem;
+			@media screen and (max-width: 449px) {
+				width: 40 * @rem;
+			}
+		}
+
+		button {
+			color: transparent;
+			opacity: 0;
+		}
+	}
+}

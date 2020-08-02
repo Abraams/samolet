@@ -1,0 +1,34 @@
+@import "_libs";
+@import "base/_vars";
+@import "base/_fonts";
+
+*,
+*::before,
+*::before {
+	outline: none;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+img,
+svg {
+	max-width: 100%;
+	pointer-events: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+@import "base/_classes";
+@import "base/_buttons";
+@import "components/_slick";
+@import "_style";
+@import "components/_call-me";

@@ -1,0 +1,31 @@
+.call-btn {
+	display: none;
+	width: 65 * @rem;
+	height: 65 * @rem;
+	background-color: @red;
+	border-radius: 10em;
+	position: fixed;
+	right: 25 * @rem;
+	bottom: 25 * @rem;
+	z-index: 99;
+	cursor: pointer;
+	@media screen and (max-width: 1023px) {
+		display: block;
+	}
+
+	i {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		svg {
+			max-width: 35 * @rem;
+			max-height: 35 * @rem;
+		}
+	}
+}
