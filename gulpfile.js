@@ -21,6 +21,7 @@ const PATHS = {
 		jsLibs: [
 			`node_modules/jquery/dist/jquery.min.js`,
 			`node_modules/slick-carousel/slick/slick.min.js`,
+			`node_modules/animejs/lib/anime.min.js`,
 		],
 		img: `${SOURCE_FOLDER}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
 		fonts: `${SOURCE_FOLDER}/fonts/*.ttf`,
